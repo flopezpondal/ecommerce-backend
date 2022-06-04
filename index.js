@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const port = 3400;
-const password = 'alfab3ta';
-const URL = `mongodb+srv://neotech:${password}@ecommerce.o2lka.mongodb.net/?retryWrites=true&w=majority`;
+const password = require('./config/config').dbPassword;
+// const URL = `mongodb+srv://neotech:${password}@ecommerce.o2lka.mongodb.net/?retryWrites=true&w=majority`;
+const URL = `mongodb+srv://neotech:Clav3Clav3@cluster0.lwbyo.mongodb.net/ng?authSource=admin&replicaSet=atlas-m10gyp-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true`;
 
 const app = require('./app');
 
